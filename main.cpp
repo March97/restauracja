@@ -5,6 +5,7 @@
 int main()
 {
     std::cout << "Hello world!" << std::endl;
-    RestaurantChain r;
+    RestaurantChain c;
+    c.show();
     return 0;
 }
