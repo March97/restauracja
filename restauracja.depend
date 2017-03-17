@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1489755550 source:c:\users\w³aœciciel\documents\github\restauracja\main.cpp
+	<iostream>
+	"RestaurantChain.h"
+
+1489755523 source:c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.cpp
+	<iostream>
+	"RestaurantChain.h"
+
+1489755785 c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.h
+	<iostream>
+
