@@ -1,5 +1,15 @@
 #include <iostream>
+#include <conio.h>
 #include "RestaurantChain.h"
+
+void RestaurantChain::load()
+{
+    std::cout<<"Name: "; std::getline(std::cin, name);
+    std::cout<<"Kind of food: "; std::getline(std::cin, kindoffood);
+    std::cout<<"Number of restaurants: "; std::cin>>numofrestaurants;
+    std::cout<<"Number of employees: "; std::cin>>numofemployees;
+    std::cout<<"Incomes: "; std::cin>>incomes;
+}
 
 void RestaurantChain::show()
 {

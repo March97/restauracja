@@ -1,20 +1,23 @@
 # depslib dependency file v1.0
-1489756591 source:c:\users\w³aœciciel\documents\github\restauracja\main.cpp
+1490136462 source:c:\users\w³aœciciel\documents\github\restauracja\main.cpp
 	<iostream>
+	<conio.h>
 	"RestaurantChain.h"
 
-1489755841 source:c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.cpp
+1490136536 source:c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.cpp
 	<iostream>
+	<conio.h>
 	"RestaurantChain.h"
 
-1489757091 c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.h
+1490136172 c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.h
 	<iostream>
 	"Restaurant.h"
 
-1489756987 source:c:\users\w³aœciciel\documents\github\restauracja\restaurant.cpp
+1490136172 source:c:\users\w³aœciciel\documents\github\restauracja\restaurant.cpp
 	<iostream>
+	<conio.h>
 	"Restaurant.h"
 
-1489756591 c:\users\w³aœciciel\documents\github\restauracja\restaurant.h
+1490136651 c:\users\w³aœciciel\documents\github\restauracja\restaurant.h
 	<iostream>
 

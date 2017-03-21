@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Restaurant.cpp" />
+		<Unit filename="Restaurant.h" />
+		<Unit filename="RestaurantChain.cpp" />
+		<Unit filename="RestaurantChain.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
