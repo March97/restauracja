@@ -7,8 +7,8 @@ int main()
 {
     std::cout << "Hello world!" << std::endl;
     RestaurantChain c;
+    c.r.load();
     c.show();
-    c.load();
-    c.show();
+    c.r.show();
     return 0;
 }
