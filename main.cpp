@@ -7,8 +7,11 @@ int main()
 {
     std::cout << "Hello world!" << std::endl;
     RestaurantChain c;
-    c.r.load();
-    c.show();
-    c.r.show();
+    std::cin>>c;
+    std::cout<<c;
+    //c.setname("cos tam");
+    //c.r.load();
+    //c.show();
+    //c.r.show();
     return 0;
 }

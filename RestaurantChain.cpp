@@ -2,6 +2,11 @@
 #include <conio.h>
 #include "RestaurantChain.h"
 
+void RestaurantChain::setname(std::string s)
+{
+    name=s;
+}
+
 void RestaurantChain::load()
 {
     std::cout<<"Name: "; std::getline(std::cin, name);
@@ -32,4 +37,16 @@ RestaurantChain::RestaurantChain(std::string n, std::string k, unsigned int r, u
 RestaurantChain::~RestaurantChain()
 {
     std::cout<<"Destruktor sieci restauracji"<<std::endl;
+}
+
+std::ostream &operator<<(std::ostream &output, const RestaurantChain &c)
+{
+   return output<<"Name: "<<c.name<<std::endl<<"Kind of food: "<<c.kindoffood<<std::endl
+   <<"Number of restaurants: "<<c.numofrestaurants<<std::endl<<"Number of employees: "<<c.numofemployees<<std::endl
+   <<"Incomes: "<<c.incomes<<std::endl;
+}
+
+std::istream &operator>>(std::istream &input, RestaurantChain &c)
+{
+    return input>>c.name>>c.kindoffood>>c.numofemployees>>c.numofrestaurants>>c.incomes;
 }
