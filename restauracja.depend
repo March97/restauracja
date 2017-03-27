@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1490291574 source:c:\users\w³aœciciel\documents\github\restauracja\main.cpp
+1490636992 source:c:\users\w³aœciciel\documents\github\restauracja\main.cpp
+	<cassert>
 	<iostream>
 	<conio.h>
 	"RestaurantChain.h"
@@ -13,11 +14,11 @@
 	<iostream>
 	"Restaurant.h"
 
-1490627974 source:c:\users\w³aœciciel\documents\github\restauracja\restaurant.cpp
+1490629444 source:c:\users\w³aœciciel\documents\github\restauracja\restaurant.cpp
 	<iostream>
 	<conio.h>
 	"Restaurant.h"
 
-1490628233 c:\users\w³aœciciel\documents\github\restauracja\restaurant.h
+1490637137 c:\users\w³aœciciel\documents\github\restauracja\restaurant.h
 	<iostream>
 

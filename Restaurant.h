@@ -19,7 +19,41 @@ public:
     ~Restaurant();
 
     //operatory
-//    bool operator==(Restaurant &r1, Restaurant &r2);
+    bool operator==(Restaurant &r)
+    {
+        return(employees()==r.employees_)
+            &&(incomes()==r.incomes_);
+    }
+
+    bool operator!=(Restaurant &r)
+    {
+        return(employees()!=r.employees_)
+            &&(incomes()!=r.incomes_);
+    }
+
+    bool operator<(Restaurant &r)
+    {
+        return(employees()<r.employees_)
+            &&(incomes()<r.incomes_);
+    }
+
+    bool operator<=(Restaurant &r)
+    {
+        return(employees()<=r.employees_);
+    }
+
+    bool operator>(Restaurant &r)
+    {
+        return(employees()>r.employees_)
+            &&(incomes()>r.incomes_);
+    }
+
+    bool operator >=(Restaurant &r)
+    {
+        return(employees()>=r.employees_);
+    }
+
+    Restaurant &operator=(Restaurant &r);
 
     //wlasciwosci
     inline std::string address() {return address_;}

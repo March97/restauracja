@@ -2,6 +2,7 @@
 #include <conio.h>
 #include "Restaurant.h"
 
+//metody
 
 void Restaurant::load()
 {
@@ -21,6 +22,8 @@ void Restaurant::show()
     std::cout<<"Incomes: "<<incomes_<<"$"<<std::endl;
 }
 
+//konstruktor destruktor
+
 Restaurant::Restaurant(std::string a, std::string m, unsigned int s, unsigned int e, float i)
 {
     address_=a;
@@ -34,3 +37,5 @@ Restaurant::~Restaurant()
 {
     std::cout<<"Destruktor restauracji"<<std::endl;
 }
+
+

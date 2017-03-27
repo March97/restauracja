@@ -1,19 +1,33 @@
+#include <cassert>
 #include <iostream>
 #include <conio.h>
-#include "RestaurantChain.h"
 
+#include "RestaurantChain.h"
 
 int main()
 {
     std::cout << "Hello world!" << std::endl;
-    RestaurantChain c;
 
-    std::cin>>c;
-    //c.moreclients(200, 15.27);
-    std::cout<<c;
-    //c.setname("cos tam");
-    //c.r.load();
-    //c.show();
-    //c.r.show();
-    return 0;
+//#ifdef DEBUG
+    Restaurant a("Programistyczna 13", "Dominik Marchewka");
+    assert(a.address()=="Programistyczna 13");
+    assert(a.manager()=="Dominik Marchewka");
+    assert(a.seats()==0);
+    assert(a.employees()==0);
+    assert(a.incomes()==0);
+
+    Restaurant b("Pesymistyczna 24", "Jan Kowalski", 30, 10, 30000);
+    Restaurant c("Pesymistyczna 24", "Jan Kowalski", 30, 10, 30000);
+
+    assert(a!=b);
+    assert(b==c);
+
+    assert(b>=c);
+    assert(b<=c);
+
+    assert(!(b>c));
+    assert(!(b<c));
+
+    //return 0;
+//#endif // DEBUG
 }
