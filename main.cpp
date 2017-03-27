@@ -7,7 +7,9 @@ int main()
 {
     std::cout << "Hello world!" << std::endl;
     RestaurantChain c;
+
     std::cin>>c;
+    //c.moreclients(200, 15.27);
     std::cout<<c;
     //c.setname("cos tam");
     //c.r.load();

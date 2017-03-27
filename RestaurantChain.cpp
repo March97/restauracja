@@ -2,12 +2,22 @@
 #include <conio.h>
 #include "RestaurantChain.h"
 
+void RestaurantChain::moreclients(int people, float dinnerprice)
+{
+    incomes+=people*dinnerprice;
+}
+
+float RestaurantChain::incomesonemployee()
+{
+    return incomes/numofemployees;
+}
+
 void RestaurantChain::setname(std::string s)
 {
     name=s;
 }
 
-void RestaurantChain::load()
+/*void RestaurantChain::load()
 {
     std::cout<<"Name: "; std::getline(std::cin, name);
     std::cout<<"Kind of food: "; std::getline(std::cin, kindoffood);
@@ -23,7 +33,7 @@ void RestaurantChain::show()
     std::cout<<"Number of restaurants: "<<numofrestaurants<<std::endl;
     std::cout<<"Number of employees: "<<numofemployees<<std::endl;
     std::cout<<"Incomes: "<<incomes<<"$"<<std::endl;
-}
+}*/
 
 RestaurantChain::RestaurantChain(std::string n, std::string k, unsigned int r, unsigned int e, float i)
 {
@@ -50,3 +60,8 @@ std::istream &operator>>(std::istream &input, RestaurantChain &c)
 {
     return input>>c.name>>c.kindoffood>>c.numofemployees>>c.numofrestaurants>>c.incomes;
 }
+
+//RestaurantChain &operator+(RestaurantChain &c1, RestaurantChain &c2)
+//{
+//    return merge;
+//}
