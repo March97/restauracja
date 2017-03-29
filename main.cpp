@@ -40,6 +40,10 @@ int main()
 
     Restaurant d=Restaurant::together(b,c);
     assert(d==(b+c));
+
+    assert((d=d)==d);
+    assert((a=d)==d);
+
     d.show();
     std::cout<<"Tests are finished!"<<std::endl;
 

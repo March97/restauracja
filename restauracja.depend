@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1490812270 source:c:\users\w³aœciciel\documents\github\restauracja\main.cpp
+1490813423 source:c:\users\w³aœciciel\documents\github\restauracja\main.cpp
 	<cassert>
 	<iostream>
 	<conio.h>
@@ -19,7 +19,7 @@
 	<conio.h>
 	"Restaurant.h"
 
-1490813274 c:\users\w³aœciciel\documents\github\restauracja\restaurant.h
+1490814746 c:\users\w³aœciciel\documents\github\restauracja\restaurant.h
 	<iostream>
 	<limits>
 	<conio.h>

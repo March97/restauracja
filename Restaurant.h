@@ -94,7 +94,19 @@ public:
 
     inline Restaurant &operator+(Restaurant &r) {return together(*this, r);}
 
-    //Restaurant &operator=(Restaurant &r);
+    inline Restaurant &operator=(Restaurant &r)
+    {
+        if(this!=&r)
+        {
+            this->address_=r.address();
+            this->manager_=r.manager();
+            this->employees_=r.employees();
+            this->seats_=r.seats();
+            this->incomes_=r.incomes();
+            return *this;
+        }
+        return *this;
+    };
 
     //wlasciwosci
     inline std::string address() {return address_;}
