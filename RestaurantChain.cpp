@@ -2,6 +2,15 @@
 #include <conio.h>
 #include "RestaurantChain.h"
 
+RestaurantChain RestaurantChain::addRestaurant(Restaurant &r)
+{
+    this->RestaurantList_.push_back(r);
+    numofrestaurants_++;
+    numofemployees_+=r.employees();
+    chainincomes_+=r.incomes();
+    return *this;
+}
+
 void RestaurantChain::moreclients(int people, float dinnerprice)
 {
     chainincomes_+=people*dinnerprice;

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "Restaurant.h"
 
 class RestaurantChain
@@ -9,9 +10,11 @@ private:
     unsigned int numofemployees_;
     float chainincomes_;
 
+    std::vector<Restaurant>RestaurantList_;
+
 public:
-    Restaurant r;
-    //wymysl pare metod jakis sensownych
+    //Restaurant r;
+    RestaurantChain addRestaurant(Restaurant &r);
     void moreclients(int, float);
     float incomesonemployee();
     void setname(std::string); //zmienia nazwe (name)

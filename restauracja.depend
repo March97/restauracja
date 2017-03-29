@@ -5,13 +5,14 @@
 	<conio.h>
 	"RestaurantChain.h"
 
-1490812648 source:c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.cpp
+1490823994 source:c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.cpp
 	<iostream>
 	<conio.h>
 	"RestaurantChain.h"
 
-1490822377 c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.h
+1490823338 c:\users\w³aœciciel\documents\github\restauracja\restaurantchain.h
 	<iostream>
+	<vector>
 	"Restaurant.h"
 
 1490822023 source:c:\users\w³aœciciel\documents\github\restauracja\restaurant.cpp

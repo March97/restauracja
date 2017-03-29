@@ -49,6 +49,14 @@ int main()
     assert(b.averageincomes(b.incomes(), b.employees())==3000);
 
     d.show();
+
+
+
+    //RestaurantChain
+    RestaurantChain chain ("Testowa Siec");
+    chain.addRestaurant(a);
+
+    std::cout<<chain;
     std::cout<<"Tests are finished!"<<std::endl;
 
     //return 0;
