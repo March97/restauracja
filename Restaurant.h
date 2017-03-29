@@ -91,6 +91,9 @@ public:
             seats_--;
             return *this;
     }
+
+    inline Restaurant &operator+(Restaurant &r) {return together(*this, r);}
+
     //Restaurant &operator=(Restaurant &r);
 
     //wlasciwosci
@@ -101,7 +104,7 @@ public:
     inline float incomes() {return incomes_;}
 
     //metody
-    static Restaurant &together(Restaurant &a, Restaurant &b) //metoda laczaca 2 restauracje
+    static Restaurant &together(Restaurant &a, Restaurant &b) //metoda laczaca dwie restauracje
     {
         std::string managers;
         unsigned int seats;
@@ -116,6 +119,6 @@ public:
 
         return *c;
 
-    }; //metoda laczaca dwie restauracje
+    };
 
 };
