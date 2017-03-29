@@ -50,10 +50,7 @@ RestaurantChain::RestaurantChain(std::string n, unsigned int r, unsigned int e, 
     chainincomes_=i;
 }
 
-RestaurantChain::~RestaurantChain()
-{
-    std::cout<<"Destruktor sieci restauracji"<<std::endl;
-}
+RestaurantChain::~RestaurantChain() {}
 
 std::ostream &operator<<(std::ostream &output, const RestaurantChain &c)
 {

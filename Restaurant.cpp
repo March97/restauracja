@@ -53,10 +53,4 @@ Restaurant::Restaurant(std::string a, std::string m, unsigned int s, unsigned in
     incomes_=i;
 }
 
-Restaurant::~Restaurant()
-{
-    std::cout<<"Destruktor restauracji"<<std::endl;
-}
-
-
-
+Restaurant::~Restaurant() {}

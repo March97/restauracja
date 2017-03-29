@@ -54,7 +54,27 @@ int main()
 
     //RestaurantChain
     RestaurantChain chain ("Testowa Siec");
+
     chain.addRestaurant(a);
+    assert(chain.numofrestaurants()==1);
+    assert(chain.chainincomes()==60000);
+    assert(chain.numofemployees()==20);
+
+    chain.addRestaurant(b);
+    assert(chain.numofrestaurants()==2);
+    assert(chain.chainincomes()==90000);
+    assert(chain.numofemployees()==30);
+
+    chain.addRestaurant(c);
+    assert(chain.numofrestaurants()==3);
+    assert(chain.chainincomes()==120000);
+    assert(chain.numofemployees()==40);
+
+    chain.addRestaurant(d);
+    assert(chain.numofrestaurants()==4);
+    assert(chain.chainincomes()==180000);
+    assert(chain.numofemployees()==60);
+
 
     std::cout<<chain;
     std::cout<<"Tests are finished!"<<std::endl;
