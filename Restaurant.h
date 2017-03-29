@@ -15,6 +15,8 @@ private:
 public:
     void load(); // metoda wczytujaca wszystkie parametry
     void show(); // metoda pokazujaca wszystkie parametry
+    float averageincomes(float, unsigned int); // liczy srednie przychody na pracownika
+    void happytime(unsigned int); //czas promocji zwieksza przychody zaleznie od czasu e godzinach (argument metody), liczby miejsc i pracownikow
 
     //Konstruktor i Destruktor
     Restaurant(std::string="", std::string="", unsigned int=0, unsigned int=0, float=0);
@@ -130,7 +132,6 @@ public:
         Restaurant *c=new Restaurant(a.address(), managers, seats, employees, incomes);
 
         return *c;
-
     };
 
 };

@@ -2,6 +2,8 @@
 #include <conio.h>
 #include "Restaurant.h"
 
+float Restaurant::burgerprice_=5; //cena burgera
+
 //metody
 
 void Restaurant::load()
@@ -20,6 +22,24 @@ void Restaurant::show()
     std::cout<<"Number of seats: "<<seats_<<std::endl;
     std::cout<<"Number of employees: "<<employees_<<std::endl;
     std::cout<<"Incomes: "<<incomes_<<"$"<<std::endl;
+    std::cout<<"Burger price: "<<burgerprice_<<"$"<<std::endl;
+}
+
+float Restaurant::averageincomes(float inc, unsigned int emp)
+{
+    if(emp>0)
+        return(inc/emp);
+    else
+        return 0;
+}
+
+void Restaurant::happytime(unsigned int time)
+{
+    float incomes2;
+
+    incomes2=time*60*seats_*(employees_/1.5)*burgerprice_;
+    std::cout<<"Incomes increased by: "<<incomes2/incomes_<<"%"<<std::endl;
+    incomes_+=incomes2;
 }
 
 //konstruktor destruktor

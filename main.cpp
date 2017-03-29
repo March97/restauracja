@@ -44,6 +44,10 @@ int main()
     assert((d=d)==d);
     assert((a=d)==d);
 
+    //metody
+
+    assert(b.averageincomes(b.incomes(), b.employees())==3000);
+
     d.show();
     std::cout<<"Tests are finished!"<<std::endl;
 
