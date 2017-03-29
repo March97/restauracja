@@ -60,8 +60,3 @@ std::istream &operator>>(std::istream &input, RestaurantChain &c)
 {
     return input>>c.name>>c.kindoffood>>c.numofemployees>>c.numofrestaurants>>c.incomes;
 }
-
-//RestaurantChain &operator+(RestaurantChain &c1, RestaurantChain &c2)
-//{
-//    return merge;
-//}

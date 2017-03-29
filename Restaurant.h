@@ -1,5 +1,6 @@
 #include <iostream>
 #include <limits>
+#include <conio.h>
 
 class Restaurant
 {
@@ -98,5 +99,23 @@ public:
     inline unsigned int seats() {return seats_;}
     inline unsigned int employees() {return employees_;}
     inline float incomes() {return incomes_;}
+
+    //metody
+    static Restaurant &together(Restaurant &a, Restaurant &b) //metoda laczaca 2 restauracje
+    {
+        std::string managers;
+        unsigned int seats;
+        unsigned int employees;
+        float incomes;
+
+        managers=a.manager()+" & "+b.manager();
+        seats=a.seats()+b.seats();
+        employees=a.employees()+b.employees();
+        incomes=a.incomes()+b.incomes();
+        Restaurant *c=new Restaurant(a.address(), managers, seats, employees, incomes);
+
+        return *c;
+
+    }; //metoda laczaca dwie restauracje
 
 };

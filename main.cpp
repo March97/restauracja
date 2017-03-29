@@ -37,7 +37,10 @@ int main()
     assert(a.seats()==1);
     a--;
     assert(a.seats()==0);
-    a.show();
+
+    Restaurant d=Restaurant::together(b,c);
+    d.show();
+    std::cout<<"Tests are finished!"<<std::endl;
 
     //return 0;
 //#endif // DEBUG
