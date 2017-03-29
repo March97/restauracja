@@ -1,5 +1,5 @@
 #include <iostream>
-#include <conio.h>
+#include <string>
 #include "Restaurant.h"
 
 float Restaurant::burgerprice_=5; //cena burgera

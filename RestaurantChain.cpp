@@ -1,5 +1,5 @@
 #include <iostream>
-#include <conio.h>
+#include <string>
 #include "RestaurantChain.h"
 
 RestaurantChain RestaurantChain::addRestaurant(Restaurant &r)

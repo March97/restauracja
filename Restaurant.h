@@ -1,6 +1,6 @@
 #include <iostream>
 #include <limits>
-#include <conio.h>
+#include <string>
 
 class Restaurant
 {

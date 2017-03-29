@@ -1,6 +1,5 @@
 #include <cassert>
 #include <iostream>
-#include <conio.h>
 
 #include "RestaurantChain.h"
 
@@ -8,7 +7,7 @@ int main()
 {
     std::cout << "Hello world!" << std::endl;
 
-//#ifdef DEBUG
+#ifdef DEBUG
     Restaurant a("Programistyczna 13", "Dominik Marchewka");
     assert(a.address()=="Programistyczna 13");
     assert(a.manager()=="Dominik Marchewka");
@@ -48,9 +47,6 @@ int main()
 
     assert(b.averageincomes(b.incomes(), b.employees())==3000);
 
-    d.show();
-
-
 
     //RestaurantChain
     RestaurantChain chain ("Testowa Siec");
@@ -75,10 +71,8 @@ int main()
     assert(chain.chainincomes()==180000);
     assert(chain.numofemployees()==60);
 
-
-    std::cout<<chain;
     std::cout<<"Tests are finished!"<<std::endl;
 
-    //return 0;
-//#endif // DEBUG
+    return 0;
+#endif // DEBUG
 }
