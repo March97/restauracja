@@ -28,6 +28,17 @@ int main()
     assert(!(b>c));
     assert(!(b<c));
 
+    //operatory pre i post inkrementacji i dekrementacji
+    ++a;
+    assert(a.employees()==1);
+    --a;
+    assert(a.employees()==0);
+    a++;
+    assert(a.seats()==1);
+    a--;
+    assert(a.seats()==0);
+    a.show();
+
     //return 0;
 //#endif // DEBUG
 }
