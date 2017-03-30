@@ -7,7 +7,7 @@ int main()
 {
     std::cout << "Hello world!" << std::endl;
 
-//#ifdef DEBUG
+#ifdef DEBUG
     Restaurant a("Programistyczna 13", "Dominik Marchewka");
     assert(a.address()=="Programistyczna 13");
     assert(a.manager()=="Dominik Marchewka");
@@ -74,5 +74,5 @@ int main()
     std::cout<<"Tests are finished!"<<std::endl;
 
     return 0;
-//#endif // DEBUG
+#endif // DEBUG
 }

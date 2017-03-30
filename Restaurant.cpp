@@ -154,16 +154,16 @@ Restaurant &Restaurant::operator=(Restaurant &r)
 Restaurant &Restaurant::together(Restaurant &a, Restaurant &b)
 {
     std::string managers;
-        unsigned int seats;
-        unsigned int employees;
-        float incomes;
+    unsigned int seats;
+    unsigned int employees;
+    float incomes;
 
-        managers=a.manager()+" & "+b.manager();
-        seats=a.seats()+b.seats();
-        employees=a.employees()+b.employees();
-        incomes=a.incomes()+b.incomes();
-        Restaurant *c=new Restaurant(a.address(), managers, seats, employees, incomes);
+    managers=a.manager()+" & "+b.manager();
+    seats=a.seats()+b.seats();
+    employees=a.employees()+b.employees();
+    incomes=a.incomes()+b.incomes();
+    Restaurant *c=new Restaurant(a.address(), managers, seats, employees, incomes);
 
-        return *c;
+    return *c;
 }
 
