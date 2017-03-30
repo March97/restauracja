@@ -50,3 +50,4 @@ bin/Debug/restauracja.exe
 obj/Debug/main.o
 *.o
 *.exe
+*.o

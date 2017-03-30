@@ -108,3 +108,62 @@ bool Restaurant::operator>=(Restaurant &r)
         &&(incomes()>=r.incomes_)
         &&(seats()>=r.seats_);
 }
+
+Restaurant &Restaurant::operator++()
+{
+    if(employees_<std::numeric_limits<unsigned int>::max())
+        employees_++;
+    return *this;
+}
+
+Restaurant &Restaurant::operator--()
+{
+    if(employees_>0)
+        employees_--;
+    return *this;
+}
+
+Restaurant &Restaurant::operator++(int)
+{
+    if(seats_<std::numeric_limits<unsigned int>::max())
+        seats_++;
+    return *this;
+}
+
+Restaurant &Restaurant::operator--(int)
+{
+    if(seats_>0)
+        seats_--;
+    return *this;
+}
+
+Restaurant &Restaurant::operator=(Restaurant &r)
+{
+    if(this!=&r)
+    {
+        this->address_=r.address();
+        this->manager_=r.manager();
+        this->employees_=r.employees();
+        this->seats_=r.seats();
+        this->incomes_=r.incomes();
+        return *this;
+        }
+    return *this;
+}
+
+Restaurant &Restaurant::together(Restaurant &a, Restaurant &b)
+{
+    std::string managers;
+        unsigned int seats;
+        unsigned int employees;
+        float incomes;
+
+        managers=a.manager()+" & "+b.manager();
+        seats=a.seats()+b.seats();
+        employees=a.employees()+b.employees();
+        incomes=a.incomes()+b.incomes();
+        Restaurant *c=new Restaurant(a.address(), managers, seats, employees, incomes);
+
+        return *c;
+}
+
