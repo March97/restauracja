@@ -14,6 +14,7 @@ private:
 
 public:
     RestaurantChain addRestaurant(Restaurant &r); // metoda dodajaca restauracje do sieci
+    RestaurantChain remRestaurant(unsigned int);
 
     void moreclients(int, float);
     float incomesonemployee();
@@ -23,7 +24,7 @@ public:
     //void show(); // metoda pokazujaca wszystkie parametry
 
     //konstruktor i destruktor
-    RestaurantChain(std::string="", unsigned int=0, unsigned int=0, float=0);
+    RestaurantChain(std::string name="", unsigned int restaurants=0, unsigned int employees=0, float incomes=0);
     ~RestaurantChain();
 
     friend std::ostream &operator<<(std::ostream &output, const RestaurantChain &c);

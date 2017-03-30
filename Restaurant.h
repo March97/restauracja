@@ -19,51 +19,16 @@ public:
     void happytime(unsigned int); //czas promocji zwieksza przychody zaleznie od czasu e godzinach (argument metody), liczby miejsc i pracownikow
 
     //Konstruktor i Destruktor
-    Restaurant(std::string="", std::string="", unsigned int=0, unsigned int=0, float=0);
+    Restaurant(std::string address="", std::string manager="", unsigned int seats=0, unsigned int employees=0, float incomes=0);
     ~Restaurant();
 
     //operatory porownania
-    bool operator==(Restaurant &r)
-    {
-        return(employees()==r.employees_)
-            &&(incomes()==r.incomes_)
-            &&(seats()==r.seats_);
-    }
-
-    bool operator!=(Restaurant &r)
-    {
-        return(employees()!=r.employees_)
-            &&(incomes()!=r.incomes_)
-            &&(seats()!=r.seats_);
-    }
-
-    bool operator<(Restaurant &r)
-    {
-        return(employees()<r.employees_)
-            &&(incomes()<r.incomes_)
-            &&(seats()<r.seats_);
-    }
-
-    bool operator<=(Restaurant &r)
-    {
-        return(employees()<=r.employees_)
-            &&(incomes()<=r.incomes_)
-            &&(seats()<=r.seats_);
-    }
-
-    bool operator>(Restaurant &r)
-    {
-        return(employees()>r.employees_)
-            &&(incomes()>r.incomes_)
-            &&(seats()>r.seats_);
-    }
-
-    bool operator >=(Restaurant &r)
-    {
-        return(employees()>=r.employees_)
-            &&(incomes()>=r.incomes_)
-            &&(seats()>=r.seats_);
-    }
+    bool operator==(Restaurant &r);
+    bool operator!=(Restaurant &r);
+    bool operator<(Restaurant &r);
+    bool operator<=(Restaurant &r);
+    bool operator>(Restaurant &r);
+    bool operator >=(Restaurant &r);
 
     inline Restaurant &operator++()
     {
@@ -109,6 +74,11 @@ public:
         }
         return *this;
     };
+
+    //operatory strumienia
+    friend std::ostream &operator<<(std::ostream &output, const Restaurant &r);
+    friend std::istream &operator>>(std::istream &input, Restaurant &r);
+
 
     //wlasciwosci
     inline std::string address() {return address_;}

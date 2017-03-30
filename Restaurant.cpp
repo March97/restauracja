@@ -54,3 +54,57 @@ Restaurant::Restaurant(std::string a, std::string m, unsigned int s, unsigned in
 }
 
 Restaurant::~Restaurant() {}
+
+std::ostream &operator<<(std::ostream &output, const Restaurant &r)
+{
+   return output<<"Address: "<<r.address_<<std::endl
+   <<"Manager: "<<r.manager_<<std::endl<<"Number of employees: "<<r.employees_<<std::endl
+   <<"Number of seats: "<<r.seats_<<"Incomes: "<<r.incomes_<<std::endl;
+}
+
+std::istream &operator>>(std::istream &input, Restaurant &r)
+{
+    return input>>r.address_>>r.manager_>>r.seats_>>r.employees_>>r.incomes_;
+}
+
+bool Restaurant::operator==(Restaurant &r)
+{
+    return(employees()==r.employees_)
+        &&(incomes()==r.incomes_)
+        &&(seats()==r.seats_);
+}
+
+bool Restaurant::operator!=(Restaurant &r)
+{
+    return(employees()!=r.employees_)
+        &&(incomes()!=r.incomes_)
+        &&(seats()!=r.seats_);
+}
+
+bool Restaurant::operator<(Restaurant &r)
+{
+    return(employees()<r.employees_)
+        &&(incomes()<r.incomes_)
+        &&(seats()<r.seats_);
+}
+
+bool Restaurant::operator<=(Restaurant &r)
+{
+    return(employees()<=r.employees_)
+        &&(incomes()<=r.incomes_)
+        &&(seats()<=r.seats_);
+}
+
+bool Restaurant::operator>(Restaurant &r)
+{
+    return(employees()>r.employees_)
+        &&(incomes()>r.incomes_)
+        &&(seats()>r.seats_);
+}
+
+bool Restaurant::operator>=(Restaurant &r)
+{
+    return(employees()>=r.employees_)
+        &&(incomes()>=r.incomes_)
+        &&(seats()>=r.seats_);
+}
